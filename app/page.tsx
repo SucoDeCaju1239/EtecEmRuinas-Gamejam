@@ -305,6 +305,64 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Integrantes Section */}
+      <section className="py-20 px-4 border-t border-border/20 relative">
+        <div className="max-w-4xl mx-auto">
+          <h3 className="text-3xl font-bold text-center mb-12 glow-amber">
+            Integrantes
+          </h3>
+          <ul className="space-y-4 text-center">
+            {[
+              {
+                name: 'Maykon Sullyvan Jesus Gouveia Alves',
+                role: '3º MDS',
+                
+              },
+              {
+                name: 'Matheus Ribeiro  ',
+                role: '3º MDS',
+                
+              },
+              {
+                name: 'Davi Borges',
+                role: '3º JODI',
+                
+              },
+              {
+                name: 'Yasmin Machado ',
+                role: '3º JODI',
+                
+              },
+              {
+                name: 'Lucas Vital Marinho',
+                role: '2º JODI',
+                
+              },
+              {
+                name: 'Luca Jin Lee Barros',
+                role: '2º JODI',
+                
+              },
+              {
+                name: 'Lucas Pessôa Carneiro Rodrigues dos Santos',
+                role: '2º JODI',
+              },
+              
+              
+              {
+                name: 'Pablo Ruan Silva',
+                role: '1º JODI',
+                
+              },
+            ].map((member, index) => (
+              <li key={index} className="text-lg">
+                <strong>{member.name}</strong> - {member.role}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="border-t border-border/20 py-12 px-4 text-center text-sm text-muted-foreground">
         <div className="max-w-6xl mx-auto">
